@@ -10,14 +10,15 @@ module.exports = {
       md: '768px',
       lg: '976px',
       xl: '1440px',
-      xxl: '1744px'
+      xxl: '1600px'
     },
 
   height: {
     xl: '500px'
   },
       backgroundImage: {
-        'hero-image': "url('src/images/Rectangle 1.png')"
+        'hero-image': "url('src/images/Rectangle 1.png')",
+        'banner-image': "url('src/images/Rectangle 19.png')" 
       }
     },
   },
