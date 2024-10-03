@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { HeroComponent } from './hero/hero/hero.component';
 import { BestsellersComponent } from './bestsellers/bestsellers/bestsellers.component';
 import { BannnerComponent } from './banner/bannner/bannner.component';
+import { CollectionComponent } from './collection/collection/collection.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { BannnerComponent } from './banner/bannner/bannner.component';
     HeroComponent,
     BestsellersComponent,
     BannnerComponent,
+    CollectionComponent,
   ],
   imports: [
     BrowserModule
