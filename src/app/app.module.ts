@@ -7,6 +7,8 @@ import { HeroComponent } from './hero/hero/hero.component';
 import { BestsellersComponent } from './bestsellers/bestsellers/bestsellers.component';
 import { BannnerComponent } from './banner/bannner/bannner.component';
 import { CollectionComponent } from './collection/collection/collection.component';
+import { AboutUsComponent } from './about/about-us/about-us.component';
+import { FooterComponent } from './footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { CollectionComponent } from './collection/collection/collection.componen
     BestsellersComponent,
     BannnerComponent,
     CollectionComponent,
+    AboutUsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule

@@ -18,7 +18,8 @@ module.exports = {
   },
       backgroundImage: {
         'hero-image': "url('src/images/Rectangle 1.png')",
-        'banner-image': "url('src/images/Rectangle 19.png')" 
+        'banner-image': "url('src/images/Rectangle 19.png')",
+        'about-image': "url('src/images/Dale.png')" 
       }
     },
   },
