@@ -18,10 +18,14 @@ module.exports = {
   },
       backgroundImage: {
         'hero-image': "url('src/images/Rectangle 1.png')",
-        'banner-image': "url('src/images/Rectangle 19.png')",
-        'about-image': "url('src/images/Dale.png')" 
+        'banner-image': "url('src/images/img.png')",
+        'about-image': "url('src/images/Dale.png')",
+        'mevka-one': "url('src/images/Rectangle 4.png')",
+        'mevka-two': "url('src/images/Rectangle 19.png')",
+        'mevka-three': "url('src/images/Rectangle 20.png')"
       }
     },
+    
   },
   plugins: [],
 }
