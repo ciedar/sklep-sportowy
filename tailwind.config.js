@@ -22,7 +22,8 @@ module.exports = {
         'about-image': "url('src/images/Dale.png')",
         'mevka-one': "url('src/images/Rectangle 4.png')",
         'mevka-two': "url('src/images/Rectangle 19.png')",
-        'mevka-three': "url('src/images/Rectangle 20.png')"
+        'mevka-three': "url('src/images/Rectangle 20.png')",
+        'new-gero': "url('src/images/image.avif')",
       }
     },
     
