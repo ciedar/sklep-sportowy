@@ -10,6 +10,7 @@ import { CollectionComponent } from './collection/collection/collection.componen
 import { AboutUsComponent } from './about/about-us/about-us.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { ProductCardComponent } from './product/product-card/product-card.component';
+import { RegisterComponent } from './register/register/register.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ProductCardComponent } from './product/product-card/product-card.compon
     CollectionComponent,
     AboutUsComponent,
     FooterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    RegisterComponent
 
   ],
   imports: [
