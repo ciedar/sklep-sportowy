@@ -13,8 +13,15 @@ export class NavbarComponent {
 
   }
 
-  hamburgerShow() {
-    console.log(this.hideOne.nativeElement)
+  hamburgerShow(element: MouseEvent) {
+    // console.log(element)
+    // console.log(this.hideOne.nativeElement.classList.forEach(a => {
+    //   console.log('One:', a);
+    // }))
+    // console.log(this.hideTwo.nativeElement.classList.forEach((a) => {
+    //   console.log('Two:',a);
+    // }))
     this.hideTwo.nativeElement.classList.toggle('hidden');
+    // this.hideOne.nativeElement.classList.toggle('hidden');
   }
 }
