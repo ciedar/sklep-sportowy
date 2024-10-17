@@ -1,4 +1,4 @@
-<div class="flex items-center container mx-auto relative">
+<!-- <div class="flex items-center container mx-auto relative">
     <button class="absolute -left-5 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200">
         <svg data-slot="icon" class="w-6 h-6" fill="none" stroke-width="1.5" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 4.5l-7.5 7.5 7.5 7.5M12.75 4.5L5.25 12l7.5 7.5" />
@@ -20,4 +20,56 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 4.5l7.5 7.5-7.5 7.5M11.25 4.5l7.5 7.5-7.5 7.5" />
         </svg>
     </button>
+</div> -->
+<!-- <div class="flex items-center container mx-auto relative gap-6 px-4 lg:px-0">
+    <button class="absolute z-10 -left-5 lg:-left-5 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition duration-300">
+        <svg data-slot="icon" class="w-6 h-6" fill="none" stroke-width="1.5" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 4.5l-7.5 7.5 7.5 7.5M12.75 4.5L5.25 12l7.5 7.5" />
+        </svg>
+    </button>
+    <div class="flex justify-between w-full mb-4 gap-6">
+        <div class="shadow-xl rounded-lg overflow-hidden hover:scale-105 transform transition duration-300">
+            <img src="assets/images/Rectangle 19.png" alt="" class="w-auto h-auto max-w-full shadow-md rounded-lg">
+        </div>
+        <div class="shadow-xl rounded-lg overflow-hidden hover:scale-105 transform transition duration-300">
+            <img src="assets/images/Rectangle 20.png" alt="" class="w-auto h-auto max-w-full shadow-md rounded-lg">
+        </div>
+        <div class="shadow-xl rounded-lg overflow-hidden hover:scale-105 transform transition duration-300">
+            <img src="assets/images/Rectangle 4.png" alt="" class="w-auto h-auto max-w-full shadow-md rounded-lg">
+        </div>
+    </div>
+    <button class="absolute z-10 top-1/2 -right-5 lg:-right-5 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition duration-300">
+        <svg data-slot="icon" class="w-6 h-6" fill="none" stroke-width="1.5" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 4.5l7.5 7.5-7.5 7.5M11.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+    </button>
+</div> -->
+<div class="flex items-center container mx-auto relative gap-6 px-4 lg:px-0">
+    <!-- Przycisk lewy (poprzedni) -->
+    <button class="absolute z-10 -left-5 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition duration-300 hidden md:block">
+        <svg data-slot="icon" class="w-6 h-6" fill="none" stroke-width="1.5" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 4.5l-7.5 7.5 7.5 7.5M12.75 4.5L5.25 12l7.5 7.5" />
+        </svg>
+    </button>
+
+    <!-- Obrazki -->
+    <div class="flex flex-col gap-6 w-full mb-4 md:flex-row justify-between">
+        <div class="shadow-xl rounded-lg overflow-hidden hover:scale-105 transform transition duration-300">
+            <img src="assets/images/Rectangle 19.png" alt="" class="w-auto h-auto max-w-full shadow-md rounded-lg">
+        </div>
+        <div class="shadow-xl rounded-lg overflow-hidden hover:scale-105 transform transition duration-300">
+            <img src="assets/images/Rectangle 20.png" alt="" class="w-auto h-auto max-w-full shadow-md rounded-lg">
+        </div>
+        <div class="shadow-xl rounded-lg overflow-hidden hover:scale-105 transform transition duration-300">
+            <img src="assets/images/Rectangle 4.png" alt="" class="w-auto h-auto max-w-full shadow-md rounded-lg">
+        </div>
+    </div>
+
+    <!-- Przycisk prawy (następny) -->
+    <button class="absolute z-10 top-1/2 -right-5 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition duration-300 hidden md:block">
+        <svg data-slot="icon" class="w-6 h-6" fill="none" stroke-width="1.5" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 4.5l7.5 7.5-7.5 7.5M11.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+    </button>
 </div>
+

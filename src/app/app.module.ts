@@ -11,6 +11,7 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { ProductCardComponent } from './product/product-card/product-card.component';
 import { RegisterComponent } from './register/register/register.component';
+import { DropdownDirective } from './dropdown.directive';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { RegisterComponent } from './register/register/register.component';
     AboutUsComponent,
     FooterComponent,
     ProductCardComponent,
-    RegisterComponent
+    RegisterComponent,
+    DropdownDirective
 
   ],
   imports: [
