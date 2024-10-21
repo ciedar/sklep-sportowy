@@ -21,7 +21,7 @@ export class NavbarComponent {
     // console.log(this.hideTwo.nativeElement.classList.forEach((a) => {
     //   console.log('Two:',a);
     // }))
-    this.hideTwo.nativeElement.classList.toggle('hidden');
+    // this.hideTwo.nativeElement.classList.toggle('hidden');
     // this.hideOne.nativeElement.classList.toggle('hidden');
   }
 }

@@ -14,7 +14,8 @@ module.exports = {
       xxl: '1600px'
     },
     fontFamily: {
-      sans: ['Bebas Neue', 'sans-serif']
+      // heading: ['Bebas Neue', 'sans-serif'],
+      text: ['Inter', 'sans-serif']
     },
 
   height: {
