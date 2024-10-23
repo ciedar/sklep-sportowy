@@ -1,4 +1,4 @@
-<nav class="flex justify-between items-center h-24 mx-auto container px-4 lg:px-8 w-full border-b">
+<!-- <nav class="flex justify-between items-center h-24 mx-auto container px-4 lg:px-8 w-full border-b">
     <div class="h-full flex items-center gap-2 w-full lg:w-auto">
         <input type="search" placeholder="Search" class="border border-gray-300 rounded-lg h-9 px-4 w-full lg:w-auto focus:outline-none focus:border-gray-400 transition duration-300">
         <button class="border border-gray-300 rounded-lg px-3 h-9 flex items-center justify-center hover:bg-gray-100 transition duration-300">
@@ -7,14 +7,14 @@
             </svg>
         </button>
     </div>
-    <div class="lg:hidden flex items-center justify-end w-full smd:justify-end">
-        <button  #hamburger class="text-gray-600 p-2 focus:outline-none border border-gray-300 rounded-lg  hover:bg-gray-100 transition duration-300">
+    <div  class="lg:hidden flex items-center justify-end w-full smd:justify-end">
+        <button appDropdown  class="text-gray-600 p-2 focus:outline-none border border-gray-300 rounded-lg  hover:bg-gray-100 transition duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
     </div>
-    <div #one class="hidden lg:flex justify-end h-full gap-8 hamburger" id="one">
+    <div #one  class="hidden lg:flex justify-end h-full gap-8" id="one">
         <div class="flex items-center gap-6 text-lg font-medium text-gray-700">
             <a href="#" class="hover:text-gray-900 transition duration-300">Women's</a>
             <a href="#" class="hover:text-gray-900 transition duration-300">Men's</a>
@@ -29,7 +29,7 @@
         </div>
     </div>
 </nav>
-<div #two class=" hamburger hidden" id="two" appDropdown>
+<div class="hidden" id="">
     <div class="flex flex-col gap-4 mt-4 px-4 justify-end items-end mb-12">
         <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900  border border-gray-300 rounded-lg  hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Women's</a>
         <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900  border border-gray-300 rounded-lg  hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Men's</a>
@@ -41,4 +41,51 @@
             <button class="h-9 px-4 text-black bg-gray-200 rounded-lg hover:bg-gray-300">Sign In</button>
             <button class="h-9 px-4 text-white bg-black rounded-lg hover:bg-gray-800">Register</button>
         </div> 
+</div> -->
+
+<nav class="flex justify-between items-center h-24 mx-auto container px-4 lg:px-8 w-full border-b">
+    <div class="h-full flex items-center gap-2 w-full lg:w-auto">
+        <input type="search" placeholder="Search" class="border border-gray-300 rounded-lg h-9 px-4 w-full lg:w-auto focus:outline-none focus:border-gray-400 transition duration-300">
+        <button class="border border-gray-300 rounded-lg px-3 h-9 flex items-center justify-center hover:bg-gray-100 transition duration-300">
+            <svg fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="lg:hidden flex items-center justify-end w-full smd:justify-end">
+        <button appDropdown class="text-gray-600 p-2 focus:outline-none border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <div #one class="hidden lg:flex justify-end h-full gap-8">
+        <div class="flex items-center gap-6 text-lg font-medium text-gray-700">
+            <a href="#" class="hover:text-gray-900 transition duration-300">Women's</a>
+            <a href="#" class="hover:text-gray-900 transition duration-300">Men's</a>
+            <a href="#" class="hover:text-gray-900 transition duration-300">Accessories</a>
+            <a href="#" class="hover:text-gray-900 transition duration-300">Community</a>
+            <a href="#" class="hover:text-gray-900 transition duration-300">Pricing</a>
+            <a href="#" class="hover:text-gray-900 transition duration-300">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+            <button class="h-9 px-4 text-black bg-gray-200 rounded-lg hover:bg-gray-300 transition duration-300">Sign In</button>
+            <button class="h-9 px-4 text-white bg-black rounded-lg hover:bg-gray-800 transition duration-300">Register</button>
+        </div>
+    </div>
+</nav>
+
+<div appDropdown class="hidden">
+    <div class="flex flex-col gap-4 mt-4 px-4 justify-end items-end mb-12">
+        <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Women's</a>
+        <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Men's</a>
+        <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Accessories</a>
+        <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Community</a>
+        <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Pricing</a>
+        <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Contact</a>
+        <div class="flex gap-3 mt-2">
+            <button class="h-9 px-4 text-black bg-gray-200 rounded-lg hover:bg-gray-300">Sign In</button>
+            <button class="h-9 px-4 text-white bg-black rounded-lg hover:bg-gray-800">Register</button>
+        </div>
+    </div>
 </div>
