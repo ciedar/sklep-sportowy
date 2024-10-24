@@ -25,22 +25,31 @@ import { Directive, HostListener, HostBinding, ElementRef } from '@angular/core'
   selector: '[appDropdown]'
 })
 export class DropdownDirective {
-  @HostBinding('class.hidden') isOpen: boolean = false; 
+  @HostBinding('class.visible') isOpen: boolean = false; 
 
   constructor(private elRef: ElementRef) { }
 
   @HostListener('click') toggleOpen() {
     this.isOpen = !this.isOpen;
+    if(this.elRef.nativeElement.classList.contains('hidden')) {
+      console.log('click')
+      this.elRef.nativeElement.classList.toggle('hidden')
+    }
   }
   
   @HostListener('document:click', ['$event']) onDocumentClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
-    console.log(this.isOpen)
+    // console.log(this.elRef.nativeElement.classList.contains('hidden'))
+
+    // if(this.elRef.nativeElement.classList.contains('custom')) {
+    //   this.elRef.nativeElement.classList.toggle('hidden')
+    //   console.log(this.elRef)
+    // }
+
     
     if (!this.elRef.nativeElement.contains(target)) {
-      console.log(this.isOpen)
       this.isOpen = false; 
-      // console.log(this.elRef.nativeElement)
+      
     }
   }
 }
