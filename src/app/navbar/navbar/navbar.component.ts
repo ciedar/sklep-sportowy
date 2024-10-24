@@ -1,11 +1,12 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { DropdownDirective } from 'src/app/dropdown.directive';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
 @ViewChild('hamburger', {static:false}) hamburgerBtn!: ElementRef<HTMLButtonElement>;
 @ViewChild('one', {static:false}) hideOne!:  ElementRef<HTMLDivElement>;
 @ViewChild('two', {static:false}) hideTwo!:  ElementRef<HTMLDivElement>;
@@ -13,15 +14,19 @@ export class NavbarComponent {
 
   }
 
+  ngOnInit(): void {
+    console.log(DropdownDirective);
+  }
+
   hamburgerShow(element: MouseEvent) {
-    // console.log(element)
-    // console.log(this.hideOne.nativeElement.classList.forEach(a => {
-    //   console.log('One:', a);
-    // }))
-    // console.log(this.hideTwo.nativeElement.classList.forEach((a) => {
-    //   console.log('Two:',a);
-    // }))
-    // this.hideTwo.nativeElement.classList.toggle('hidden');
-    // this.hideOne.nativeElement.classList.toggle('hidden');
+    const click = element.target as HTMLElement
+    this.hideTwo.nativeElement.classList.toggle('hidden');
+
+
+    if(element.target != click) {
+      console.log('asda')
+
+    }
+
   }
 }
