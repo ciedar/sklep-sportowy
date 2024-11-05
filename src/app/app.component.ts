@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sklep-sportowy';
+  @Output() hamburgerOff = new EventEmitter<boolean>();
+  constructor() {
+
+  }
+
+
+  closeHamburger(element: MouseEvent) {
+    const target = element.target as HTMLElement;
+    
+    if(!target.closest('nav')) {
+      const emit = false;
+      this.hamburgerOff.emit(!emit);
+    }
+    
+  }
 }
