@@ -24,8 +24,12 @@
             <a href="#" class="hover:text-gray-900 transition duration-300">Contact</a>
         </div>
         <div class="flex items-center gap-3">
-            <button class="h-9 px-4 text-black bg-gray-200 rounded-lg hover:bg-gray-300 transition duration-300">Sign In</button>
-            <button class="h-9 px-4 text-white bg-black rounded-lg hover:bg-gray-800 transition duration-300">Register</button>
+            <button routerLink="sign-up"
+            [queryParams]="{panel: 'log-in'}"
+             class="h-9 px-4 text-black bg-gray-200 rounded-lg hover:bg-gray-300 transition duration-300">Sign In</button>
+            <button routerLink="sign-up"
+            [queryParams]="{panel: 'register'}"
+             class="h-9 px-4 text-white bg-black rounded-lg hover:bg-gray-800 transition duration-300">Register</button>
         </div>
     </div>
 </nav>
@@ -38,8 +42,14 @@
         <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900  border border-gray-300 rounded-lg  hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Pricing</a>
         <a href="#" class="text-gray-700 text-lg font-medium hover:text-gray-900  border border-gray-300 rounded-lg  hover:bg-gray-100 transition duration-300 min-w-40 text-right pr-4">Contact</a>
         <div class="flex gap-3 mt-2">
-            <button class="h-9 px-4 text-black bg-gray-200 rounded-lg hover:bg-gray-300">Sign In</button>
-            <button class="h-9 px-4 text-white bg-black rounded-lg hover:bg-gray-800">Register</button>
+            <button 
+            routerLink="sign-up"
+            [queryParams]="{panel: 'log-in'}"
+            class="h-9 px-4 text-black bg-gray-200 rounded-lg hover:bg-gray-300">Sign In</button>
+            <button 
+            routerLink="sign-up"
+            [queryParams]="{panel: 'register'}"
+             class="h-9 px-4 text-white bg-black rounded-lg hover:bg-gray-800">Register</button>
         </div> 
     </div>
 </div>

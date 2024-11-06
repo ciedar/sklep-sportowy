@@ -1,4 +1,5 @@
-import { Component, ViewChild, ElementRef, OnInit, Output, EventEmitter, Input, HostListener } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import { Component, ViewChild, ElementRef, OnInit, Output, EventEmitter, Input, 
 export class NavbarComponent implements OnInit {
 @ViewChild('two', {static:false}) hideTwo!:  ElementRef<HTMLDivElement>;
 
-  constructor(private elRef: ElementRef) {
+  constructor(private elRef: ElementRef, private router: Router) {
 
   }
 
