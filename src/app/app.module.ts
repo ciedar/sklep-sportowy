@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
@@ -12,6 +13,8 @@ import { FooterComponent } from './footer/footer/footer.component';
 import { ProductCardComponent } from './product/product-card/product-card.component';
 import { RegisterComponent } from './register/register/register.component';
 import { DropdownDirective } from './dropdown.directive';
+import { HomeComponent } from './home/home.component';
+import { AppRouteModule } from './app-route.module';
 
 
 @NgModule({
@@ -26,11 +29,12 @@ import { DropdownDirective } from './dropdown.directive';
     FooterComponent,
     ProductCardComponent,
     RegisterComponent,
-    DropdownDirective
-
+    DropdownDirective,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
