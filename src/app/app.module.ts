@@ -15,6 +15,7 @@ import { RegisterComponent } from './register/register/register.component';
 import { DropdownDirective } from './dropdown.directive';
 import { HomeComponent } from './home/home.component';
 import { AppRouteModule } from './app-route.module';
+import { SidebarComponent } from './sidebar/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AppRouteModule } from './app-route.module';
     ProductCardComponent,
     RegisterComponent,
     DropdownDirective,
-    HomeComponent
+    HomeComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
