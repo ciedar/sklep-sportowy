@@ -1,113 +1,78 @@
 <div class="w-full sm:w-40 md:w-64 lg:w-80 border-2 p-12 overflow-y-auto">
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">FILTER & SORT</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-                  
-            </span>
-        </h2>
+    <div class="flex justify-between items-center py-4 border-b" (click)="toggle('filterSort')">
+      <h2 class="text-lg font-semibold">FILTER & SORT</h2>
+      <h2 class="text-lg font-semibold">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </h2>
     </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">SORT BY</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
+    <div *ngIf="isOpen['filterSort']" class="pl-4">
+      <ul>
+        <li class="py-2">Option 1</li>
+        <li class="py-2">Option 2</li>
+        <li class="py-2">Option 3</li>
+      </ul>
     </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">PRODUCT TYPE</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
+  
+    <div class="flex justify-between items-center py-4 border-b" (click)="toggle('sortBy')">
+      <h2 class="text-lg font-semibold">SORT BY</h2>
+      <h2 class="text-lg font-semibold">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </h2>
     </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">SIZE</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
+    <div *ngIf="isOpen['sortBy']" class="pl-4">
+      <ul>
+        <li class="py-2">Option 1</li>
+        <li class="py-2">Option 2</li>
+        <li class="py-2">Option 3</li>
+      </ul>
     </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">FEATURES</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
+  
+    <div class="flex justify-between items-center py-4 border-b" (click)="toggle('productType')">
+      <h2 class="text-lg font-semibold">PRODUCT TYPE</h2>
+      <h2 class="text-lg font-semibold">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </h2>
     </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">FIT</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
+    <div *ngIf="isOpen['productType']" class="pl-4">
+      <ul>
+        <li class="py-2">Option 1</li>
+        <li class="py-2">Option 2</li>
+        <li class="py-2">Option 3</li>
+      </ul>
     </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">ACTIVITY</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
+  
+    <div class="flex justify-between items-center py-4 border-b" (click)="toggle('size')">
+      <h2 class="text-lg font-semibold">SIZE</h2>
+      <h2 class="text-lg font-semibold">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </h2>
     </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">COLLECTION</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
+    <div *ngIf="isOpen['size']" class="pl-4">
+      <ul>
+        <li class="py-2">Option 1</li>
+        <li class="py-2">Option 2</li>
+        <li class="py-2">Option 3</li>
+      </ul>
     </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">COLOR</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
-    </div>
-    <div class="flex justify-between items-center py-4 border-b">
-        <h2 class="text-lg font-semibold">PATTERN</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
-    </div>
-    <div class="flex justify-between items-center py-4">
-        <h2 class="text-lg font-semibold">DISCOUNT</h2>
-        <h2 class="text-lg font-semibold">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
-            </span>
-        </h2>
-    </div>
-</div>
+  
+    <!-- Repeat for other sections (FEATURES, FIT, ACTIVITY, etc.) -->
+    <!-- Just like above, add the toggle logic for each of these sections -->
+    
+  </div>
+  
